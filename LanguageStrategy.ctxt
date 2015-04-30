@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=LanguageStrategy()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ LanguageStrategy\r\n
+comment1.params=language
+comment1.target=void\ chooseLanguage(java.lang.String)
+comment2.params=language
+comment2.target=void\ showBill(java.lang.String)
+comment3.params=language
+comment3.target=void\ showOpenAccountInfo(java.lang.String)
+numComments=4
