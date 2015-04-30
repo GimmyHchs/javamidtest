@@ -13,7 +13,7 @@ public class 台灣銀行 extends Bank
 
     }
     public Account openAccount(Customer customer,double price){
-        return new Account("accnum000",customer.ID,price);
+        return new Account("台灣銀行","accnum000",customer.ID,price);
     }
      public  void showOpenAccountInfo(String language,Account acc){
         ls.showOpenAccountInfo(language,acc);

@@ -25,9 +25,9 @@ public class LanguageStrategy
         else if(language.equals("ChineseTraditional"))
            l=new ChineseTraditional();
     }
-    public void showBill(String language){
+    public void showBill(Transactions ts,String language){
         this.chooseLanguage(language);
-        l.showBill();
+        l.showBill(ts);
     }
     public void showOpenCustomerInfo(String language,Customer customer){
         this.chooseLanguage(language);
@@ -48,5 +48,8 @@ public class LanguageStrategy
     }
     public void showGetBalanceError(){
         l.showGetBalanceError();
+    }
+    public void showWithdrawError(){
+        l.showWithDrawError();
     }
 }

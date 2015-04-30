@@ -1,8 +1,6 @@
 #BlueJ class context
-comment0.params=
-comment0.target=Transactions()
+comment0.params=n\ t\ p\ b
+comment0.target=Transactions(java.lang.String,\ java.lang.String,\ double,\ double)
 comment1.params=
 comment1.target=void\ recordBill()
-comment2.params=language
-comment2.target=void\ showBill(java.lang.String)
-numComments=3
+numComments=2

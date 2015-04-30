@@ -21,7 +21,7 @@ public class 中國信託 extends Bank
      * @return     the sum of x and y 
      */
     public Account openAccount(Customer customer,double price){
-        return new Account("accnum001",customer.ID,price);
+        return new Account("中國信託","accnum001",customer.ID,price);
     }
     public  void showOpenAccountInfo(String language,Account acc){
          ls.showOpenAccountInfo(language,acc);

@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.params=
 comment0.target=ChineseTraditional()
-comment1.params=
-comment1.target=void\ showBill()
+comment1.params=ts
+comment1.target=void\ showBill(Transactions)
 comment2.params=c
 comment2.target=void\ showOpenCustomerInfo(Customer)
 comment3.params=acc
@@ -11,8 +11,10 @@ comment4.params=
 comment4.target=void\ showChangeLanguageInfo()
 comment5.params=
 comment5.target=void\ showDepositError()
-comment6.params=price
-comment6.target=void\ showGetBalance(double)
-comment7.params=
-comment7.target=void\ showGetBalanceError()
-numComments=8
+comment6.params=
+comment6.target=void\ showWithDrawError()
+comment7.params=price
+comment7.target=void\ showGetBalance(double)
+comment8.params=
+comment8.target=void\ showGetBalanceError()
+numComments=9

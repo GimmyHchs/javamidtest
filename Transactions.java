@@ -9,17 +9,23 @@ public class Transactions
 {
     //public String language;
     public LanguageStrategy ls;
-    public Transactions()
+    public String ts_num;
+    public String ts_type;
+    public double ts_price;
+    public double ts_balance;
+    public Transactions(String n,String t,double p,double b)
     {
       ls=new LanguageStrategy();
+      this.ts_num=n;
+      this.ts_type=t;
+      this.ts_price=p;
+      this.ts_balance=b;
     }
     
     public void recordBill(){
       // System.out.printf("紀錄了一筆交易資料...\n");
     }
-    public void showBill(String language){
-        ls.showBill(language);
-    }
+    
 
     
 }

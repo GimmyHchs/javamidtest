@@ -8,11 +8,12 @@
 public abstract class Language
 {
 
-    abstract void showBill();
+    abstract void showBill(Transactions ts);
     abstract void showOpenCustomerInfo(Customer customer);
     abstract void showOpenAccountInfo(Account acc);
     abstract void showChangeLanguageInfo();
     abstract void showDepositError();
     abstract void showGetBalance(double price);
     abstract void showGetBalanceError();
+    abstract void showWithDrawError();
 }

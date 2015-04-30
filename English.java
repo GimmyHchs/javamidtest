@@ -12,8 +12,15 @@ public class English extends Language
     {
        
     }
-    public void showBill(){
-        System.out.printf("顯示一個English的Bill\n");
+    public void showBill(Transactions ts){
+        System.out.printf("<--------Transaction Information-------->\n");
+       
+        System.out.printf("Transaction Num = "+ts.ts_num+"\n");
+        System.out.printf("Transaction Type = "+ts.ts_type+"\n");
+        System.out.printf("Transaction price = "+ts.ts_price+"\n");
+        System.out.printf("Transaction balance = "+ts.ts_price+"\n");
+
+       System.out.printf("<--------Transaction Information-------->\n");
     }
     public void showOpenCustomerInfo(Customer c){
         System.out.printf("<--------Customer Information-------->\n");
@@ -26,6 +33,7 @@ public class English extends Language
     };
     public void showOpenAccountInfo(Account acc){
         System.out.printf("<--------Account Information-------->\n");
+        System.out.printf("Bank Name = "+acc.bankname+"\n");
         System.out.printf("Account ID = "+acc.accnum+"\n");
         System.out.printf("Customer ID = "+acc.customer_ID+"\n");
         System.out.printf("Blance = "+acc.balance+"\n");
@@ -36,6 +44,9 @@ public class English extends Language
     }
     public void showDepositError(){
         System.out.printf("Error... You must open Account before you deposit....\n");
+    }
+        public void showWithDrawError(){
+        System.out.printf("Error... may be insufficient funds or you do not set up a bank account ... \n");
     }
     public void showGetBalance(double price){
         System.out.printf("Your Account Balance = "+price+"\n");

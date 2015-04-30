@@ -1,16 +1,14 @@
 #BlueJ class context
-comment0.params=accnum\ customer_ID\ balance
-comment0.target=Account(java.lang.String,\ java.lang.String,\ double)
-comment1.params=
-comment1.target=Account()
-comment2.params=
-comment2.target=boolean\ withdraw()
-comment3.params=price\ language
-comment3.target=boolean\ deposit(double,\ java.lang.String)
+comment0.params=bankname\ accnum\ customer_ID\ balance
+comment0.target=Account(java.lang.String,\ java.lang.String,\ java.lang.String,\ double)
+comment1.params=price\ language
+comment1.target=boolean\ withdraw(double,\ java.lang.String)
+comment2.params=price\ language
+comment2.target=boolean\ deposit(double,\ java.lang.String)
+comment3.params=
+comment3.target=boolean\ trasferIn()
 comment4.params=
-comment4.target=boolean\ trasferIn()
+comment4.target=boolean\ trasferOut()
 comment5.params=
-comment5.target=boolean\ trasferOut()
-comment6.params=
-comment6.target=double\ getBalance()
-numComments=7
+comment5.target=double\ getBalance()
+numComments=6

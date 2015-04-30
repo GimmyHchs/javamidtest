@@ -44,6 +44,14 @@ public class TEST
         System.out.print("Sorry.... We just support [English] [ChineseTraditional] [ChineseSimplified]"+"\n"+"Use the Default Language = \"English\"");
      
    }
+   public void withdraw(double price){
+       if(acc==null||acc.balance-price<0)
+       {
+         ls.showWithdrawError();
+       }
+       else
+       acc.withdraw(price,language);
+    }
    public void deposit(double price){
        if(acc==null)
        {
