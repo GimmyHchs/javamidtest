@@ -26,7 +26,8 @@ public abstract class Bank
         // put your code here
         return x + y;
     }
-    public abstract Account openAccount(String tel,Customer customer,double price);
-    public abstract void showOpenAccountInfo(String language);
+    public abstract Account openAccount(Customer customer,double price);
+    public abstract void showOpenCustomerInfo(String language,Customer customer);
+    public abstract void showOpenAccountInfo(String language,Account acc);
     
 }

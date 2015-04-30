@@ -12,11 +12,13 @@ public class 台灣銀行 extends Bank
     {
 
     }
-  public Account openAccount(String tel,Customer customer,double price){
-        return new Account();
+    public Account openAccount(Customer customer,double price){
+        return new Account("accnum000",customer.ID,price);
     }
-       public  void showOpenAccountInfo(String language){
-
-        ls.showOpenAccountInfo(language);
+     public  void showOpenAccountInfo(String language,Account acc){
+        ls.showOpenAccountInfo(language,acc);
     };
+    public  void showOpenCustomerInfo(String language,Customer c){
+        ls.showOpenCustomerInfo(language,c);
+    }
 }

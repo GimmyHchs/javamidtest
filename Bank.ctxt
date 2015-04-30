@@ -2,8 +2,10 @@
 comment0.params=y
 comment0.target=int\ sampleMethod(int)
 comment0.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
-comment1.params=tel\ customer\ price
-comment1.target=Account\ openAccount(java.lang.String,\ Customer,\ double)
-comment2.params=language
-comment2.target=void\ showOpenAccountInfo(java.lang.String)
-numComments=3
+comment1.params=customer\ price
+comment1.target=Account\ openAccount(Customer,\ double)
+comment2.params=language\ customer
+comment2.target=void\ showOpenCustomerInfo(java.lang.String,\ Customer)
+comment3.params=language\ acc
+comment3.target=void\ showOpenAccountInfo(java.lang.String,\ Account)
+numComments=4

@@ -13,13 +13,14 @@ public class 台北富邦Adapter extends Bank
  
     }
 
-    public Account openAccount(String tel,Customer customer,double price){
+    public Account openAccount(Customer customer,double price){
         台北富邦 b=new 台北富邦();
-        return b.hiAccount(customer);
+        return b.hiAccount(customer,price);
     }
-        public  void showOpenAccountInfo(String language){
-           
-            ls.showOpenAccountInfo(language);
-       // System.out.printf("showOpenAccountInfo\n");
+    public  void showOpenAccountInfo(String language,Account acc){
+        ls.showOpenAccountInfo(language,acc);
     };
+     public  void showOpenCustomerInfo(String language,Customer c){
+        ls.showOpenCustomerInfo(language,c);
+    }
 }

@@ -1,8 +1,10 @@
 #BlueJ class context
 comment0.params=
 comment0.target=\u53F0\u7063\u9280\u884C()
-comment1.params=tel\ customer\ price
-comment1.target=Account\ openAccount(java.lang.String,\ Customer,\ double)
-comment2.params=language
-comment2.target=void\ showOpenAccountInfo(java.lang.String)
-numComments=3
+comment1.params=customer\ price
+comment1.target=Account\ openAccount(Customer,\ double)
+comment2.params=language\ acc
+comment2.target=void\ showOpenAccountInfo(java.lang.String,\ Account)
+comment3.params=language\ c
+comment3.target=void\ showOpenCustomerInfo(java.lang.String,\ Customer)
+numComments=4

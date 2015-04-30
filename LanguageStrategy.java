@@ -29,8 +29,24 @@ public class LanguageStrategy
         this.chooseLanguage(language);
         l.showBill();
     }
-    public void showOpenAccountInfo(String language){
+    public void showOpenCustomerInfo(String language,Customer customer){
         this.chooseLanguage(language);
-        l.showOpenAccountInfo();
+        l.showOpenCustomerInfo(customer);
+    }
+     public void showOpenAccountInfo(String language,Account acc){
+        this.chooseLanguage(language);
+        l.showOpenAccountInfo(acc);
+    }
+    public void showChangeLanguageInfo(){
+        l.showChangeLanguageInfo();
+    }
+    public void showDepositError(){
+        l.showDepositError();
+    }
+    public void showGetBalance(double price){
+        l.showGetBalance(price);
+    }
+    public void showGetBalanceError(){
+        l.showGetBalanceError();
     }
 }

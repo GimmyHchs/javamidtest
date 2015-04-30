@@ -1,6 +1,16 @@
 #BlueJ class context
 comment0.params=
 comment0.target=void\ showBill()
-comment1.params=
-comment1.target=void\ showOpenAccountInfo()
-numComments=2
+comment1.params=customer
+comment1.target=void\ showOpenCustomerInfo(Customer)
+comment2.params=acc
+comment2.target=void\ showOpenAccountInfo(Account)
+comment3.params=
+comment3.target=void\ showChangeLanguageInfo()
+comment4.params=
+comment4.target=void\ showDepositError()
+comment5.params=price
+comment5.target=void\ showGetBalance(double)
+comment6.params=
+comment6.target=void\ showGetBalanceError()
+numComments=7

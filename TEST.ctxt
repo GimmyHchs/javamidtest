@@ -1,4 +1,12 @@
 #BlueJ class context
 comment0.params=
-comment0.target=void\ main()
-numComments=1
+comment0.target=TEST()
+comment1.params=
+comment1.target=void\ openAccount()
+comment2.params=l
+comment2.target=void\ chooseLanguage(java.lang.String)
+comment3.params=price
+comment3.target=void\ deposit(double)
+comment4.params=
+comment4.target=void\ showBalance()
+numComments=5

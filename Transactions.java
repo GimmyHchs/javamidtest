@@ -15,7 +15,7 @@ public class Transactions
     }
     
     public void recordBill(){
-       System.out.printf("紀錄了一筆交易資料...\n");
+      // System.out.printf("紀錄了一筆交易資料...\n");
     }
     public void showBill(String language){
         ls.showBill(language);

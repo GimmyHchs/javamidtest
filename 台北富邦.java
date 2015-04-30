@@ -18,8 +18,8 @@ public class 台北富邦
     {
      
     }
-    public Account hiAccount(Customer c){
+    public Account hiAccount(Customer c,double price){
             
-            return new Account();
+            return new Account("accnum002",c.ID,price);
     }
 }

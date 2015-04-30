@@ -14,10 +14,9 @@ public class Account
     public String cointype;
     public double balance;
     private  Transactions ts;
-    public Account(String accnum,String customer_ID,String cointype,double balance){
+    public Account(String accnum,String customer_ID,double balance){
      this.accnum=accnum;
      this.customer_ID=customer_ID;
-     this.cointype=cointype;
      this.balance=balance;
      ts=new Transactions();
     }
@@ -30,9 +29,7 @@ public class Account
     return true;
    }
   public boolean deposit(double price,String language){
-    ts.recordBill();
-    System.out.printf("Language = "+language+"\n");
-    ts.showBill(language);
+        this.balance += price;
     return true;
   }
      public boolean trasferIn(){
@@ -40,10 +37,10 @@ public class Account
        return true;
    }
      public boolean trasferOut(){
- return true;
+         return true;
    }
    public double getBalance(){
- return 0;
+       return this.balance;
     }
    
 }
