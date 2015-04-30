@@ -1,16 +1,19 @@
-------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all he/she needs to know. The comments should usually include at least:
-------------------------------------------------------------------------
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:黃清秀、藍政歆、陳文逸
+AUTHORS:黃清秀
 USER INSTRUCTIONS:
-1.Bank 使用 Adapter (假設台北富邦是不同規格的類別)  
-2.匯率使用 Strategy (不同銀行要用不同的匯率(匯入、匯出))
-3.交易明細應該使用 abstract Factory(A:依照不同的語言給予不同的語言  B : 依照不同的使用動作給予不同的回應類型)
- ，能依照不同的語言跟使用類型做搭配。
+
+
+1.預設的測試資料可以在TEST CLASS裡面做調整，並有注解
+2.將所有動作分離，請先產生一個TEST物件，並利用BlueJ內的右鍵執行動作
+3.所有動作都能夠自由穿插，獨立運作並同時保持程式正確性
+4.所有動作都有Error Exception處理，並因應不同的語言，輸出不同語言的Error
+5.運用簡單int變數，讓所有動作產生的訂單、銀行帳戶都能夠擁有正確的編號  001..002  ...003  依序自動下去
+6.所有交易訊息會在執行動作後自動輸出，並不用額外執行動作
+7.同第6點，我就沒有另外在寫display();了，畢竟所有的動作我都有詳細輸出。
+
+
+P.S 要切換語言  請執行chooseLanguage的動作  
+
+
+寫三份語言檔真的很像在做苦工...可是沒有寫Exception總覺得程式會Crash...因為時間關係，所以在匯出匯入的時候，並不會去考慮到對方帳戶餘額等等，
+只確保自己帳戶的資金流動正確，當然能夠正確扣除手續費(能在Transfer底下的Class做個別匯率修正)，

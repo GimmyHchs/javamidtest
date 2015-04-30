@@ -16,29 +16,44 @@ public class Account
     public String bankname;
     private LanguageStrategy ls=new LanguageStrategy();
     private  Transactions ts;
+    private TransferStrategy tss;
+    private int s_count=0;
     public Account(String bankname,String accnum,String customer_ID,double balance){
      this.bankname=bankname;
      this.accnum=accnum;
      this.customer_ID=customer_ID;
      this.balance=balance;
+     tss=new TransferStrategy(bankname);
+    }
+    public void setAccnum(String s)
+    {
+        this.accnum=s;
     }
   public boolean withdraw(double price,String language){
      this.balance -= price;
-     ts=new Transactions("T001","withdraw",price,balance);
+     ts=new Transactions("T000"+s_count++,"withdraw",price,balance,0);
      ls.showBill(ts,language);
     return true;
    }
   public boolean deposit(double price,String language){
      this.balance += price;
-     ts=new Transactions("T001","deposit",price,balance);
+     ts=new Transactions("T000"+s_count++,"deposit",price,balance,0);
      ls.showBill(ts,language);
      return true;
   }
-     public boolean trasferIn(){
+    public boolean transferIn(double price){
 
-       return true;
+         this.balance -= tss.transferIn();
+         this.balance += price;
+         ts=new Transactions("T000"+s_count++,"trasferIn",price,balance,tss.transferIn());
+         ls.showBill(ts,language);
+         return true;
    }
-     public boolean trasferOut(){
+     public boolean transferOut(double price){
+         this.balance -= price;
+         this.balance -= tss.transferOut();
+         ts=new Transactions("T000"+s_count++,"trasferOut",price,balance,tss.transferOut());
+         ls.showBill(ts,language);
          return true;
    }
    public double getBalance(){

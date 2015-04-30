@@ -5,7 +5,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class 台灣銀行匯率 extends TransferStrategy
+public class 台灣銀行匯率 extends Transfer
 {
     // instance variables - replace the example below with your own
     private int x;
@@ -18,12 +18,12 @@ public class 台灣銀行匯率 extends TransferStrategy
         // initialise instance variables
         x = 0;
     }
-    public boolean transerIn(){
-            return true;
+    public double transferIn(){
+            return 10;
     
         }
-   public boolean transerOut(){
-        return true;
+   public double transferOut(){
+        return 10;
     
    }
 }

@@ -13,14 +13,17 @@ public class Transactions
     public String ts_type;
     public double ts_price;
     public double ts_balance;
-    public Transactions(String n,String t,double p,double b)
+    public double ts_transfer;
+    public Transactions(String n,String t,double p,double b,double tt)
     {
       ls=new LanguageStrategy();
       this.ts_num=n;
       this.ts_type=t;
       this.ts_price=p;
       this.ts_balance=b;
+      this.ts_transfer=tt;
     }
+    
     
     public void recordBill(){
       // System.out.printf("紀錄了一筆交易資料...\n");

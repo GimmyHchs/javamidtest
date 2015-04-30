@@ -52,4 +52,7 @@ public class LanguageStrategy
     public void showWithdrawError(){
         l.showWithDrawError();
     }
+    public void showTransferError(){
+        l.showTransferError();
+    }
 }

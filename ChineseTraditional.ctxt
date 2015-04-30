@@ -17,4 +17,6 @@ comment7.params=price
 comment7.target=void\ showGetBalance(double)
 comment8.params=
 comment8.target=void\ showGetBalanceError()
-numComments=9
+comment9.params=
+comment9.target=void\ showTransferError()
+numComments=10

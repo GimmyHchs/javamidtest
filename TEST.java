@@ -10,22 +10,24 @@ public class TEST
    // public static String language="ChineseTraditional";
     //public static String language="ChineseSimplified";
     public static String language="English";
+    public static String target_bankname="台灣銀行";  //中國信託 、 台北富邦
     BankController bc;
     Bank bank1;
     Customer cust;
     LanguageStrategy ls;
     Account acc;
+    int acoount_count=0;
   
     public TEST(){
-       bc=new BankController("台灣銀行","004","BKTWTWTP042");
+       bc=new BankController(target_bankname,"004","BKTWTWTP042");
        bank1 = bc.bankFactory();
        ls=new LanguageStrategy();
        ls.chooseLanguage(language);
        cust = new Customer("Mr. A", "E0000001","Taipei","123456789", "0333333333" );
-
     }
    public void openAccount(){
      acc = bank1.openAccount(cust, 100);
+     acc.setAccnum("IDacc000"+acoount_count++);
      bank1.showOpenCustomerInfo(language,cust);
      System.out.print("                ↑               \n");
      System.out.print("                ↓               \n");
@@ -70,5 +72,21 @@ public class TEST
          ls.showGetBalance(acc.getBalance());
       }
     
+    }
+    public void transferOut(double price){
+       if(acc==null||acc.balance-price<0)
+       {
+         ls.showTransferError();
+       }
+       else
+        acc.transferOut(price);
+    }
+    public void transferIn(double price){
+        if(acc==null)
+       {
+         ls.showTransferError();
+       }
+       else
+        acc.transferIn(price);
     }
 }

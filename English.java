@@ -18,7 +18,8 @@ public class English extends Language
         System.out.printf("Transaction Num = "+ts.ts_num+"\n");
         System.out.printf("Transaction Type = "+ts.ts_type+"\n");
         System.out.printf("Transaction price = "+ts.ts_price+"\n");
-        System.out.printf("Transaction balance = "+ts.ts_price+"\n");
+        System.out.printf("Transaction Fee = "+ts.ts_transfer+"\n");
+        System.out.printf("Transaction balance = "+ts.ts_balance+"\n");
 
        System.out.printf("<--------Transaction Information-------->\n");
     }
@@ -53,5 +54,8 @@ public class English extends Language
     }
     public void showGetBalanceError(){
         System.out.printf("Error... You must open Account before you get balance....\n");
+    }
+    public void showTransferError () {
+         System.out.printf ("Error... or you do not have to establish a bank account ... \n");
     }
 }

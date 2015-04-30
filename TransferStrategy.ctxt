@@ -1,6 +1,11 @@
 #BlueJ class context
-comment0.params=
-comment0.target=boolean\ transerIn()
-comment1.params=
-comment1.target=boolean\ transerOut()
-numComments=2
+comment0.params=bankname
+comment0.target=TransferStrategy(java.lang.String)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ TransferStrategy\r\n
+comment1.params=bankname
+comment1.target=void\ chooseTransfer(java.lang.String)
+comment2.params=
+comment2.target=double\ transferIn()
+comment3.params=
+comment3.target=double\ transferOut()
+numComments=4

@@ -19,6 +19,7 @@ public class ChineseTraditional extends Language
         System.out.printf("訂單編號 = "+ts.ts_num+"\n");
         System.out.printf("訂單類型 = "+ts.ts_type+"\n");
         System.out.printf("交易價格 = "+ts.ts_price+"\n");
+        System.out.printf("手續費 = "+ts.ts_transfer+"\n");
         System.out.printf("帳戶餘額 = "+ts.ts_balance+"\n");
        System.out.printf("<--------訂單資訊-------->\n");
     }
@@ -53,6 +54,9 @@ public class ChineseTraditional extends Language
     }
     public void showGetBalanceError(){
         System.out.printf("在查詢餘額時出錯了...是您沒有建立銀行帳戶?\n");
+    }
+    public void showTransferError(){
+        System.out.printf("在轉帳時出錯了...可能是餘額不足或是您沒有建立銀行帳戶...\n");
     }
     
 }

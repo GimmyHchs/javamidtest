@@ -16,4 +16,5 @@ public abstract class Language
     abstract void showGetBalance(double price);
     abstract void showGetBalanceError();
     abstract void showWithDrawError();
+    abstract void showTransferError();
 }

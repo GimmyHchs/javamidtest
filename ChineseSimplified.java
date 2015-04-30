@@ -19,6 +19,7 @@ public class ChineseSimplified extends Language
         System.out.printf("订单编号= "+ts.ts_num+"\n");
         System.out.printf("订单类型= "+ts.ts_type+"\n");
         System.out.printf("交易价格= "+ts.ts_price+"\n");
+        System.out.printf("手续费= "+ts.ts_transfer+"\n");
         System.out.printf("帐户余额= "+ts.ts_balance+"\n");
        System.out.printf("<--------订单资讯-------->\n");
     }
@@ -54,4 +55,7 @@ public class ChineseSimplified extends Language
     public void showGetBalanceError(){
         System.out.printf("在查询余额时出错了...是不是您没有建立银行帐户?\n");
     }
+    public void showTransferError(){
+        System.out.printf("在转帐时出错了...可能是余额不足或是您没有建立银行帐户...\n");
+}
 }
